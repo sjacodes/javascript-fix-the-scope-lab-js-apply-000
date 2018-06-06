@@ -12,7 +12,7 @@ describe('Fix the Scope', function() {
       expect(window.yourAnimal()).toEqual('cat')
     })
 
-    xit('does not hard-code the answer', function() {
+    it('does not hard-code the answer', function() {
       expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
     })
   })
